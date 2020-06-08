@@ -1,3 +1,10 @@
+'''
+@Author: Whzcorcd
+@Date: 2020-06-08 09:15:49
+@LastEditors: Wzhcorcd
+@LastEditTime: 2020-06-08 14:15:18
+@Description: file content
+'''
 # coding: utf-8
 
 import json
@@ -59,9 +66,9 @@ class WechatPlugin(NotificationPlugin):
             "markdown": {
                 "content": u"#### {title} \n > {message} [href]({url})".format(
                     title=title,
-                    message=event.message,
+                    message=event.title or event.message,
                     url=u"{}events/{}/".format(
-                        group.get_absolute_url(), event.id),
+                        group.get_absolute_url(), event.event_id),
                 )
             }
         }

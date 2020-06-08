@@ -1,10 +1,3 @@
-'''
-@Author: Whzcorcd
-@Date: 2020-06-08 09:15:49
-@LastEditors: Wzhcorcd
-@LastEditTime: 2020-06-08 09:54:24
-@Description: file content
-'''
 # coding: utf-8
 
 import json
@@ -20,7 +13,7 @@ Wechat_API = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key={key}"
 
 class WechatPlugin(NotificationPlugin):
     """
-    Sentry extension to send error counts to Wechat Work.
+    Sentry extension to Share information to Wechat Work.
     """
     author = 'whzcorcd'
     author_url = 'https://github.com/corcd/sentry-wechat'

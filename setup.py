@@ -1,4 +1,13 @@
 #!/usr/bin/env python
+# coding: utf-8
+
+#############################################
+# File Name: setup.py
+# Author: whzcorcd
+# Mail: whzcorcd@gmail.com
+# Created Time:  2020-06-08
+#############################################
+
 from setuptools import setup, find_packages
 
 with open("README.md", "r") as fh:
@@ -6,7 +15,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="sentry-wechat",
-    version='0.0.1',
+    version='0.0.2',
     author='whzcorcd',
     author_email='whzcorcd@gmail.com',
     url='https://github.com/corcd/sentry-wechat',
